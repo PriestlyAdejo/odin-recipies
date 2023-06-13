@@ -1,0 +1,101 @@
+.header {
+    display: flex;
+    flex-direction: column;
+  }
+
+/* Separator between the two header rows */
+.header.divider.h {
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+}
+
+.header.divider.v {
+    background-color: #ccc;
+    width: 1px;
+    height:100%;
+}
+
+.top-row {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 10px;
+background-color: #f1f1f1;
+}
+
+.menu-button {
+background-color: #4caf50;
+color: white;
+border: none;
+padding: 10px 20px;
+font-size: 16px;
+cursor: pointer;
+}
+
+.search-form {
+display: flex;
+align-items: center;
+}
+
+.search-form input[type="text"] {
+padding: 5px;
+margin-right: 5px;
+}
+
+.search-form button[type="submit"] {
+background-color: #4caf50;
+color: white;
+border: none;
+padding: 5px 10px;
+font-size: 14px;
+cursor: pointer;
+}
+
+.bottom-row {
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 10px;
+background-color: #ddd;
+}
+
+.header-item {
+margin: 0 10px;
+}
+
+.header-item:first-child {
+margin-left: 0;
+}
+
+.header-item:last-child {
+margin-right: 0;
+}
+
+.header::after {
+display: block;
+height: 1px;
+background-color: #ccc;
+margin-top: 10px;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: center;
+    height: 1px;
+    padding: 10px 10px 0 10px;
+    background-color: #ccc;
+}
+
+.page-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.page-content img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
